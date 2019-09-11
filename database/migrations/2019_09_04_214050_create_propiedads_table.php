@@ -15,6 +15,8 @@ class CreatePropiedadsTable extends Migration
     {
         Schema::create('propiedads', function (Blueprint $table) {
             $table->Increments('id');
+            $table->UnsignedInteger('tipo_id');
+            $table->foreign('tipo_id')->references('id')->on('tipos');
             $table->string('calle');
             $table->string('numero');
             $table->string('piso');
