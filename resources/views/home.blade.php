@@ -1,6 +1,44 @@
 @extends('plantilla')
 
 @section('content')
+<div class="bordesRedondo">
+  <h1 class="text-center">¿Que desea hacer?</h1>
+  <div class="text-center">
+
+
+    <form class="">
+      <input class="button2 mb-3 mr-2"type="button" value="Alquilar">
+        <!-- <button class="button2 mb-3 mr-2">Alquilar</button> -->
+      
+        <input class="button1" type="button" value="Comprar">
+        <!-- <button class="button1">Comprar</button> -->
+        <div class="form-inline justify-content-center py-3">
+
+          <div class="">
+  
+            <select class="mt-3" id="country" name="country">
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+          </div>
+          <div class="mx-2">
+  
+            <select class="mt-3 " id="" name="country">
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="mx-3">
+          <button class="btn btn-danger">
+            enviar
+          </button>
+        </div>
+      </form>
+    </div>
+</div>
 <!-- CAROUSEL DE IMAGENES -->
 <div class="wrapper">
 

@@ -2,3 +2,82 @@
     max-width: 100%;
     height: auto;
 }
+h1{color:white;}
+.button1{
+    background-color:#73ad21;
+	-moz-border-radius:34px;
+	-webkit-border-radius:34px;
+	border-radius:34px;
+	border:4px solid #f9fcf9;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:15px 57px;
+    text-decoration:none;
+
+}
+.button1:hover{
+    background-color:#6ca11d;
+}
+/* con esto le quito el rectangulo al hacer click */
+.button1:focus {outline:0;}
+.button1:active{
+    position:relative;
+	top:1px;
+}
+.button2{
+    background-color:#73ad21;
+	-moz-border-radius:34px;
+	-webkit-border-radius:34px;
+	border-radius:34px;
+	border:4px solid #f9fcf9;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:15px 62px;
+    text-decoration:none;
+
+}
+.button2:hover{
+    background-color:#6ca11d;
+}
+/* con esto le quito el rectangulo al hacer click */
+.button2:focus {outline:0;}
+.button2:active{
+    position:relative;
+	top:1px;
+}
+.bordesRedondo{
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #73AD21;
+    padding: 20px;
+    
+}
+@media only screen and (min-width: 640px) {
+	.bordesRedondo{
+		border-radius: 25px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		margin-right: 20%;
+		margin-left: 20%;
+		background:#2d9949a6;
+		padding: 20px;
+		
+  }
+ }
+ select {
+	width: 100%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 34px;
+	background-color: #f1f1f1;
+  }
+  select:focus {outline:0;}
