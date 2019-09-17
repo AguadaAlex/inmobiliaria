@@ -81,3 +81,25 @@ h1{color:white;}
 	background-color: #f1f1f1;
   }
   select:focus {outline:0;}
+  #SLIDE_BG{
+	  width: 100%;
+	  height: 100vh;
+	  background-position: center center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  backface-visibility: hidden;
+	  animation: slideBg 8s linear infinite 0s;
+	  animation-timing-function: ease-in-out;
+	  background-image: url("../img/terreno1.jpg");
+  }
+  @keyframes slideBg{
+	  0%{
+		  background-image:url("../img/Casa1.jpg");
+	  }
+	  25%{
+		background-image:url("../img/depto1.jpg");
+	}
+	25%{
+		background-image:url("../img/local1.jpg");
+	}
+  }

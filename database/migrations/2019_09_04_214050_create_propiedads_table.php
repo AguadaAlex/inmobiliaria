@@ -17,6 +17,8 @@ class CreatePropiedadsTable extends Migration
             $table->Increments('id');
             $table->UnsignedInteger('tipo_id');
             $table->foreign('tipo_id')->references('id')->on('tipos');
+            $table->UnsignedInteger('localidad_id');
+            $table->foreign('localidad_id')->references('id')->on('localidads');
             $table->string('calle');
             $table->string('numero');
             $table->string('piso');

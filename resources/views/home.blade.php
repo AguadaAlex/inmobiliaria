@@ -1,73 +1,57 @@
 @extends('plantilla')
 
 @section('content')
-<div class="bordesRedondo">
-  <h1 class="text-center">¿Que desea hacer?</h1>
-  <div class="text-center">
 
 
-    <form class="">
-      <input class="button2 mb-3 mr-2"type="button" value="Alquilar">
-        <!-- <button class="button2 mb-3 mr-2">Alquilar</button> -->
-      
-        <input class="button1" type="button" value="Comprar">
-        <!-- <button class="button1">Comprar</button> -->
-        <div class="form-inline justify-content-center py-3">
 
-          <div class="">
+<div id="SLIDE_BG">
+  <!-- CONTENEDOR DE FILTRO FORMULARIO -->
+  <div class="bordesRedondo">
+    <h1 class="text-center">¿Que desea hacer?</h1>
+    <div class="text-center">
   
-            <select class="mt-3" id="country" name="country">
-            <option value="au">Australia</option>
-            <option value="ca">Canada</option>
-            <option value="usa">USA</option>
-            </select>
+      <!--  FORMULARIO -->
+      <form class="">
+          <input class="button2 mb-3 mr-2"type="button" value="Alquilar">
+          <input class="button1" type="button" value="Comprar">
+          <!-- <button class="button1">Comprar</button> -->
+          <div class="form-inline justify-content-center py-3">
+            <div class="">
+              
+                  <select class="mt-3" id="country" name="country">
+                        <option value="none" disabled selected hidden>Selecciona una Propiedad</option>
+                        @foreach($tipos as $tipo)
+                        <option value="au">{{$tipo->nombre}}</option>
+                        @endforeach
+                  </select>
+            </div>
+            <div class="mx-2">
+    
+              <select class="mt-3 " id="" name="country">
+                    <option value="none" disabled selected hidden>Selecciona una localidad</option>
+                    @foreach($localidades as $localidad)
+                    <option value="au">{{$localidad->nombre}}</option>
+                    @endforeach
+              </select>
+            </div>
           </div>
-          <div class="mx-2">
-  
-            <select class="mt-3 " id="" name="country">
-            <option value="au">Australia</option>
-            <option value="ca">Canada</option>
-            <option value="usa">USA</option>
-            </select>
+          <div class="mx-3">
+            <button class="btn btn-danger">
+              enviar
+            </button>
           </div>
-        </div>
-        <div class="mx-3">
-          <button class="btn btn-danger">
-            enviar
-          </button>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
+  </div>
+
 </div>
 <!-- CAROUSEL DE IMAGENES -->
 <div class="wrapper">
 
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="{{asset('img/destacados4.gif')}}" class="d-block w-300" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="{{asset('img/destacados3.jpg')}}" class="d-block w-200" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="{{asset('img/destacados1.jpg')}}" class="d-block w-200" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-</div>
+</div> 
 <!-- DESCRIPCION -->
 <div>
-    <h1 id="quienesSomos">Quienes somos</h1>
+    <h2 id="quienesSomos">Quienes somos</h1>
 <p>
 						 La importancia que otorgamos a nuestros emprendimientos avalan la idea
 						de ser una empresa l&iacute;der en el sector inmobiliario de la ciudad de La Plata.
