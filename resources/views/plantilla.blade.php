@@ -4,18 +4,18 @@
     @include('modulos/head')
 </head>
 <body>
-    <section>
-        <div class="container">
+    <section class="noConteiner">
+        <div class="">
             @include('modulos/cabecera')
         </div>
     </section>
-    <section>
-        <div class="container">
+    <section class="noConteiner">
+        <div class="">
             @yield('content')
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="piee">
             @include('modulos/pie')
         </div>
 

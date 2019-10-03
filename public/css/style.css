@@ -20,16 +20,17 @@ h1{color:white;}
 
 }
 .button1:hover{
-    background-color:#6ca11d;
+    background-color:#527420;
 }
 /* con esto le quito el rectangulo al hacer click */
-.button1:focus {outline:0;}
+.button1:focus {outline:0;
+	background-color:#527420;}
 .button1:active{
     position:relative;
 	top:1px;
 }
 .button2{
-    background-color:#73ad21;
+    background-color:#527420;
 	-moz-border-radius:34px;
 	-webkit-border-radius:34px;
 	border-radius:34px;
@@ -40,15 +41,16 @@ h1{color:white;}
 	font-family:Arial;
 	font-size:28px;
 	font-weight:bold;
-	padding:15px 62px;
+	padding:15px 57px;
     text-decoration:none;
 
 }
 .button2:hover{
-    background-color:#6ca11d;
+    background-color:#527420;
 }
 /* con esto le quito el rectangulo al hacer click */
-.button2:focus {outline:0;}
+.button2:focus {outline:0;
+	background-color:#527420;}
 .button2:active{
     position:relative;
 	top:1px;
@@ -57,18 +59,18 @@ h1{color:white;}
     border-radius: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
-    background: #73AD21;
+    background: #545b629e;
     padding: 20px;
     
 }
 @media only screen and (min-width: 640px) {
 	.bordesRedondo{
 		border-radius: 25px;
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-bottom: 20px;
 		margin-right: 20%;
 		margin-left: 20%;
-		background:#2d9949a6;
+		background:#545b629e;
 		padding: 20px;
 		
   }
@@ -81,25 +83,38 @@ h1{color:white;}
 	background-color: #f1f1f1;
   }
   select:focus {outline:0;}
+ 
   #SLIDE_BG{
 	  width: 100%;
 	  height: 100vh;
+	  padding-top: 10%;
 	  background-position: center center;
 	  background-size: cover;
 	  background-repeat: no-repeat;
 	  backface-visibility: hidden;
 	  animation: slideBg 8s linear infinite 0s;
 	  animation-timing-function: ease-in-out;
-	  background-image: url("../img/terreno1.jpg");
+	  background-image: url("../img/sd1.jpg");
   }
   @keyframes slideBg{
 	  0%{
-		  background-image:url("../img/Casa1.jpg");
+		  background-image:url("../img/sd2.jpg");
 	  }
 	  25%{
-		background-image:url("../img/depto1.jpg");
+		background-image:url("../img/sd3.jpg");
 	}
 	25%{
-		background-image:url("../img/local1.jpg");
+		background-image:url("../img/sd4.jpg");
 	}
+  }
+  .noConteiner{
+	  background-image: url("../img/fondo1.jpg");
+	  background-repeat:repeat-x;
+	background-attachment:fixed;
+  }
+  .HoverClass1:hover { background-color: green !important;}
+.HoverClass2:hover { background-color: yellow !important;}
+.negativo {
+	background-color: black;
+	color: white;
   }
