@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FiltrarPropiedadesRequest;
 use App\Localidad;
 use App\Tipo;
 use Illuminate\Http\Request;
@@ -14,8 +15,13 @@ class PagesController extends Controller
         return view('home',compact('tipos','localidades'));
         
     }
-    public function Store(Request $request){
-        dd($request->all());
+    public function Store(FiltrarPropiedadesRequest $request){
+        //dd($request->all());
+        // $this->validate($request,[
+        //     'boton'=>'required',
+        //     'tipo_id'=>'required',
+        //     'localidad_id'=>'required',
+        // ]);
         return 'store';
     }
 }

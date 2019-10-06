@@ -10,3 +10,4 @@
 <link rel="stylesheet" href="{{asset('css/cabecera.css')}}">
 <!-- ESTILO PIE -->
 <link rel="stylesheet" href="{{asset('css/pie.css')}}">
+<script type="text/javascript" src="{{asset('js/librerias/jquery.min.js')}}"></script>
