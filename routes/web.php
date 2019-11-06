@@ -13,3 +13,4 @@
 
 Route::get('/','PagesController@Home');
 Route::post('/propiedades','PagesController@Store');
+//Route::get('/','PagesController@ListarPropiedades');

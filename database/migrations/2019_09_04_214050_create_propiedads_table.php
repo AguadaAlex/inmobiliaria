@@ -29,6 +29,7 @@ class CreatePropiedadsTable extends Migration
             $table->integer('cantbanos');
             $table->string('foto');
             $table->string('observaciones');
+            $table->integer('condicion');
             $table->timestamps();
         });
     }

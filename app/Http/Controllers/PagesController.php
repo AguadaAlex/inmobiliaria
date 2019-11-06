@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\FiltrarPropiedadesRequest;
 use App\Localidad;
+use App\Propiedad;
 use App\Tipo;
 use Illuminate\Http\Request;
 
@@ -22,6 +23,17 @@ class PagesController extends Controller
         //     'tipo_id'=>'required',
         //     'localidad_id'=>'required',
         // ]);
-        return 'store';
+        $tipo=$request->get('boton');
+        $propiedad=$request->get('propiedad_id');
+        $localidad=$request->get('localidad_id');
+        $propiedades=Propiedad::where('tipo_id',$propiedad)
+        ->where('localidad_id',$localidad)
+        ->where('condicion',$tipo)
+        ->get();
+        //dd($propiedades);
+        //MODIFICAR LA BASE DE DATOS
+        
+        //return 'store';
+        return view('propiedades',compact('propiedades'));
     }
 }

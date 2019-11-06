@@ -3,6 +3,27 @@
     height: auto;
 }
 h1{color:white;}
+.contenedor-imagen{
+	
+	background-color: black;
+}
+.imagen-propiedad {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .contenedor-imagen:hover .imagen-propiedad {
+	  
+	opacity: 0.6;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
 .button1{
     background-color:#73ad21;
 	-moz-border-radius:34px;
