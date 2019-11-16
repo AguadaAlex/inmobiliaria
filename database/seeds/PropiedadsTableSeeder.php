@@ -15,6 +15,7 @@ class PropiedadsTableSeeder extends Seeder
         Propiedad::create([
             'tipo_id' => '1',
             'localidad_id' => '3',
+            'precio' => '15000',
             'calle'=>'calle 2',
             'numero'=>'3246',
             'piso'=>'-',
@@ -33,6 +34,7 @@ class PropiedadsTableSeeder extends Seeder
         Propiedad::create([
             'tipo_id' => '1',
             'localidad_id' => '3',
+            'precio' => '15000',
             'calle'=>'calle 2',
             'numero'=>'3246',
             'piso'=>'-',
@@ -51,6 +53,7 @@ class PropiedadsTableSeeder extends Seeder
         Propiedad::create([
             'tipo_id' => '1',
             'localidad_id' => '3',
+            'precio' => '15000',
             'calle'=>'calle 2',
             'numero'=>'3246',
             'piso'=>'-',
@@ -69,6 +72,7 @@ class PropiedadsTableSeeder extends Seeder
         Propiedad::create([
             'tipo_id' => '2',
             'localidad_id' => '3',
+            'precio' => '15000',
             'calle'=>'calle 4',
             'numero'=>'3244',
             'piso'=>'1',
@@ -88,6 +92,7 @@ class PropiedadsTableSeeder extends Seeder
         Propiedad::create([
             'tipo_id' => '3',
             'localidad_id' => '3',
+            'precio' => '15000',
             'calle'=>'calle 7',
             'numero'=>'3284',
             'piso'=>'-',
@@ -107,6 +112,7 @@ class PropiedadsTableSeeder extends Seeder
         Propiedad::create([
             'tipo_id' => '6',
             'localidad_id' => '3',
+            'precio' => '15000',
             'calle'=>'calle 542',
             'numero'=>'32412',
             'piso'=>'-',

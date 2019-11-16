@@ -7,6 +7,13 @@ h1{color:white;}
 	
 	background-color: black;
 }
+.enlace{
+	text-decoration:none;
+	color: #000;
+}
+.enlace:hover{
+	text-decoration: none;
+}
 .imagen-propiedad {
 	opacity: 1;
 	display: block;
@@ -20,8 +27,38 @@ h1{color:white;}
 	  
 	opacity: 0.6;
   }
+  .text {
+	background-color: #007944;
+	color: white;
+	border: 2px solid white;
+	border-radius: 8px;
+	font-size: 16px;
+	font-family:Trebuchet MS;
+	font-weight:bold;
+	padding: 16px 32px;
+  }
+  .vl {
+	border-left: 6px solid green;
+	height: 50px;
+  }
+  ul#menu li {
+	display:inline;
+  }
+  .text:hover{
+	  background-color:#71a95a ;
+  }
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
   
-  .container:hover .middle {
+  .contenedor-imagen:hover .middle {
 	opacity: 1;
   }
 .button1{
