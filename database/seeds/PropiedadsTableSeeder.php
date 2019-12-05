@@ -24,7 +24,7 @@ class PropiedadsTableSeeder extends Seeder
             'zona'=>'centro',
             'cantambientes'=>'5',
             'cantbanos'=>'1',
-            'foto'=>'casa1.jpg',
+            'foto'=>'casaGale1-1.jpg',
             'observaciones'=>'a 5 cuadras de la estacion de ezpeleta',
             'condicion'=>'1'
 
@@ -43,7 +43,7 @@ class PropiedadsTableSeeder extends Seeder
             'zona'=>'centro',
             'cantambientes'=>'5',
             'cantbanos'=>'1',
-            'foto'=>'casai.jpg',
+             'foto'=>'casa1.jpg',
             'observaciones'=>'a 5 cuadras de la estacion de ezpeleta',
             'condicion'=>'1'
 
@@ -62,7 +62,7 @@ class PropiedadsTableSeeder extends Seeder
             'zona'=>'centro',
             'cantambientes'=>'5',
             'cantbanos'=>'1',
-            'foto'=>'casaiii.jpg',
+             'foto'=>'casaiii.jpg',
             'observaciones'=>'a 5 cuadras de la estacion de ezpeleta',
             'condicion'=>'1'
 
@@ -81,7 +81,7 @@ class PropiedadsTableSeeder extends Seeder
             'zona'=>'centro',
             'cantambientes'=>'5',
             'cantbanos'=>'1',
-            'foto'=>'depto1.jpg',
+             'foto'=>'depto1.jpg',
             'observaciones'=>'a 5 cuadras de la estacion de ezpeleta',
             'condicion'=>'1'
 
@@ -101,7 +101,7 @@ class PropiedadsTableSeeder extends Seeder
             'zona'=>'centro',
             'cantambientes'=>'2',
             'cantbanos'=>'1',
-            'foto'=>'local1.jpg',
+             'foto'=>'local1.jpg',
             'observaciones'=>'a 5 cuadras de la estacion de ezpeleta',
             'condicion'=>'1'
 
@@ -121,7 +121,7 @@ class PropiedadsTableSeeder extends Seeder
             'zona'=>'centro',
             'cantambientes'=>'0',
             'cantbanos'=>'0',
-            'foto'=>'terreno.jpg',
+             'foto'=>'terreno.jpg',
             'observaciones'=>'a 5 cuadras de la estacion de ezpeleta',
             'condicion'=>'1'
 

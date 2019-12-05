@@ -28,7 +28,7 @@ class CreatePropiedadsTable extends Migration
             $table->string('zona');
             $table->integer('cantambientes');
             $table->integer('cantbanos');
-            $table->string('foto');
+             $table->string('foto');
             $table->string('observaciones');
             $table->integer('condicion');
             $table->timestamps();

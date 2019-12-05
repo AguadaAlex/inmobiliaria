@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('content')
-
+<script type="text/javascript" src="{{asset('js/popupGaleriaJquery.js')}}"></script>
 <h1>Propiedades</h1>
 <div class="container">
 
@@ -14,7 +14,7 @@
         <img src="/img/{{$item->foto}}" class="card-img-top img-fluid imagen-propiedad" width="100"/>
           <a href="#" class="enlace">
             <div class="middle">
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter" onclick="galeriaAjax('{{route('galerias',$item->id)}}',{{$item}})">
               ver Propiedad
             </button>
               <!-- <div class="text">Ver Propiedad</div> -->
@@ -58,7 +58,7 @@
     </div>
     <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
@@ -66,15 +66,27 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+
       <div class="modal-body">
-        ...
+        <!-- COMIENZO DE SLIDER -->
+        
+
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <div id="conteDosRow">
+
+                   
+                    
+                  </div>
+<!-- FIN DE SLIDER -->
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div id="modalfooter">
+        
       </div>
     </div>
   </div>
 </div>
 </div>
+<script type="text/javascript" src="{{asset('js/popupGaleria.js')}}"></script>
 @endsection

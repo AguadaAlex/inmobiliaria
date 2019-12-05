@@ -3,10 +3,100 @@
     height: auto;
 }
 h1{color:white;}
+
+/*INICIO GALERIA Lightbox */
+.column {
+	float: left;
+	width: 25%;
+  }
+#conteDosRow{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+  }
+  .mySlides {
+	display: none;
+  }
+  .cursor {
+	cursor: pointer;
+  }
+  .containerModal{
+	padding-left: 55px;
+  }
+  .tituloModal{
+	font-family:Trebuchet MS;
+	font-size:26px;
+	font-weight:bold;
+	font-style:italic;
+  }
+  .textoModalDer{
+	font-family:Georgia;
+	font-size:16px;
+	font-style:italic;
+  }
+  .textoModalIzq{
+	padding-left: 75px;
+	font-family:Georgia;
+	text-align:left;
+	font-size:16px;
+	font-style:italic;
+  }
+  .servicioModal{
+	padding-left: 15px;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  /* FIN DE GALERIA Lightbox */
+  
 .contenedor-imagen{
 	
 	background-color: black;
 }
+
+  
 .enlace{
 	text-decoration:none;
 	color: #000;

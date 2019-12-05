@@ -13,4 +13,5 @@
 
 Route::get('/','PagesController@Home');
 Route::post('/propiedades','PagesController@Store');
+Route::get('/galerias/{id?}', 'PagesController@galerias')->name('galerias');
 //Route::get('/','PagesController@ListarPropiedades');

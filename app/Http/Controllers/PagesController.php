@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Galeria;
 use App\Http\Requests\FiltrarPropiedadesRequest;
 use App\Localidad;
 use App\Propiedad;
@@ -35,5 +36,11 @@ class PagesController extends Controller
         
         //return 'store';
         return view('propiedades',compact('propiedades'));
+    }
+    public function galerias($id = null)
+    {
+        $galeria = Galeria::where('galeria_id', $id)->get();
+
+        return $galeria;
     }
 }
